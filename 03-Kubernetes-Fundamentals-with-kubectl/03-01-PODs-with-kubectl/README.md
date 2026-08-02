@@ -147,6 +147,8 @@ kubectl logs -f my-first-pod
 # Connect to Nginx Container in a POD
 kubectl exec -it <pod-name> -- /bin/bash
 kubectl exec -it my-first-pod -- /bin/bash
+### If you conncet with Git Bash via Window OS ###
+MSYS_NO_PATHCONV=1 kubectl exec -it my-first-pod -- /bin/sh
 
 # Execute some commands in Nginx container
 ls
